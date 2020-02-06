@@ -1,0 +1,70 @@
+﻿<Window x:Class="PSI_GUI_PP2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PSI_GUI_PP2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1010">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Label Content="Nursing Home Resident " HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="147" Height="28"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="312,55,0,0" VerticalAlignment="Top" Width="34"/>
+        <Label Content="Sex (Male or Female)" HorizontalAlignment="Left" Margin="312,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Respiratory Rate (breaths/minute)" HorizontalAlignment="Left" Margin="312,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="Systolic Blood Pressure (mmHG)" HorizontalAlignment="Left" Margin="312,208,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pulse (beats/minute)" HorizontalAlignment="Left" Margin="312,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="pH Level" HorizontalAlignment="Left" Margin="312,311,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sodium (mmol/L)" HorizontalAlignment="Left" Margin="312,372,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hematocrit (%)" HorizontalAlignment="Left" Margin="312,420,0,0" VerticalAlignment="Top"/>
+        <Label Content="Temperature" HorizontalAlignment="Left" Margin="638,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="BUN" HorizontalAlignment="Left" Margin="638,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Glucose" HorizontalAlignment="Left" Margin="638,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="Partial pressure of oxygen" HorizontalAlignment="Left" Margin="638,211,0,0" VerticalAlignment="Top"/>
+        <Label Content="Congestive Heart Failure" HorizontalAlignment="Left" Margin="7,208,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cerebrovascular Disease" HorizontalAlignment="Left" Margin="7,265,0,0" VerticalAlignment="Top"/>
+        <Label Content="Renal Disease" HorizontalAlignment="Left" Margin="10,319,0,0" VerticalAlignment="Top"/>
+        <Label Content="Altered Mental Status" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pleural Effusion on X-Ray" HorizontalAlignment="Left" Margin="10,420,0,0" VerticalAlignment="Top"/>
+        <Label Content="List of co-morbid conditions; check all that apply." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="270" Height="26"/>
+        <Label Content="Neoplastic Disease" HorizontalAlignment="Left" Margin="7,106,0,0" VerticalAlignment="Top" Width="127"/>
+        <Label Content="Liver Disease" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Width="104"/>
+
+        <CheckBox Name= "NHRyes" Content="" HorizontalAlignment="Left" Margin="162,61,0,0" VerticalAlignment="Top" Height="22" Width="16" RenderTransformOrigin="0.469,0.423"/>
+        <CheckBox Name="NDyes" Content="" HorizontalAlignment="Left" Margin="162,109,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="LDyes" Content="" HorizontalAlignment="Left" Margin="162,151,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CHFyes" Content="" HorizontalAlignment="Left" Margin="162,211,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CDyes" Content="" HorizontalAlignment="Left" Margin="162,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.388"/>
+        <CheckBox Name="RDyes" Content="" HorizontalAlignment="Left" Margin="162,322,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="AMSyes" Content="" HorizontalAlignment="Left" Margin="162,371,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="PEyes" Content="" HorizontalAlignment="Left" Margin="162,423,0,0" VerticalAlignment="Top"/>
+        
+        <TextBox Name="Age" HorizontalAlignment="Left" Height="23" Margin="351,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" Text=""/>
+        <TextBox Name="Sex" HorizontalAlignment="Left" Height="23" Margin="437,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <TextBox Name="respiratoryRate" HorizontalAlignment="Left" Height="23" Margin="505,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
+        <TextBox Name="sysBP" HorizontalAlignment="Left" Height="23" Margin="497,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105"/>
+        <TextBox Name="pulseRate" HorizontalAlignment="Left" Height="23" Margin="436,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+        <TextBox Name="phLvl" HorizontalAlignment="Left" Height="23" Margin="373,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229"/>
+        <TextBox Name="sodiumLvl" HorizontalAlignment="Left" Height="23" Margin="419,372,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183"/>
+        <TextBox Name="hematocritReading" HorizontalAlignment="Left" Height="23" Margin="406,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196"/>
+        <TextBox Name="temp" HorizontalAlignment="Left" Height="23" Margin="720,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="123"/>
+        <TextBox Name="BUNvalue" HorizontalAlignment="Left" Height="23" Margin="677,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+        <TextBox Name="glucoseValue" HorizontalAlignment="Left" Height="23" Margin="695,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148"/>
+        <TextBox Name="partialOxygenValue" HorizontalAlignment="Left" Height="23" Margin="790,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="53"/>
+        
+        <RadioButton Name="OxygenINmmHg" Content="mmHg" HorizontalAlignment="Left" Margin="863,211,0,0" VerticalAlignment="Top" GroupName="rd4"/>
+        <RadioButton Name="OxygenINkPa" Content="kPa" HorizontalAlignment="Left" Margin="926,211,0,0" VerticalAlignment="Top" GroupName="rd4"/>
+        <RadioButton Name="ctempSelected" Content="C" HorizontalAlignment="Left" Margin="863,61,0,0" VerticalAlignment="Top" GroupName="rd1"/>
+        <RadioButton Name="ftempSelected" Content="F" HorizontalAlignment="Left" Margin="926,61,0,0" VerticalAlignment="Top" GroupName="rd1"/>
+        <RadioButton Name="BUNinDL" Content="mg/dL" HorizontalAlignment="Left" Margin="863,106,0,0" VerticalAlignment="Top" GroupName="rd2"/>
+        <RadioButton Name="BUNinL" Content="mmol/L" HorizontalAlignment="Left" Margin="926,106,0,0" VerticalAlignment="Top" GroupName="rd2"/>
+        <RadioButton Name="glucoseIndL" Content="mg/dL" HorizontalAlignment="Left" Margin="863,162,0,0" VerticalAlignment="Top" GroupName="rd3"/>
+        <RadioButton Name="glucoseInL" Content="mmol/L" HorizontalAlignment="Left" Margin="926,162,0,0" VerticalAlignment="Top" GroupName="rd3"/>
+        
+        <Button Name="calculatePSI" Content="Calculate Pneumonia Severity Index" HorizontalAlignment="Left" Margin="677,311,0,0" VerticalAlignment="Top" Width="267" Height="91" Click="calculatePSI_Click"/>
+  
+    </Grid>
+</Window>
